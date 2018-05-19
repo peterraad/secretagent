@@ -1,0 +1,98 @@
+body {
+  font-family: helvetica;
+}
+
+html{
+  font-size: 18px;
+}
+
+.site {
+    margin: auto;
+}
+
+.logo{
+  display: flex;
+  width: 100%;
+  background-color: black;
+}
+
+.logoimage{
+  padding-left: .5rem;
+  padding-right: 1rem;
+}
+
+.logoheader{
+  font-size: 1rem;
+  color: white;
+  padding-top: .66rem;
+  padding-bottom: .66rem;
+}
+
+.newarrival{
+  width: 100%;
+  height: 25rem;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+  display: flex;
+  flex-direction: column;
+}
+
+.arrivalitems{
+  font-weight: bold;
+  color: white;
+  width: 20rem;
+  top: 9rem;
+  background-color: black;
+  padding: 2rem 3rem;
+  margin-top: 9rem;
+}
+.arrivalitems h4{
+  font-size: 1rem;
+}
+.arrivalitems h1{
+  font-size: 2rem;
+  font-weight: bold;
+}
+nav{
+  background-color: firebrick;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+.navitems{
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  color: white;
+  font-size: 1rem;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+
+}
+.pencontainer{
+  display: inline-block;
+}
+
+.content img{
+  width: 9rem;
+  padding: 2rem;
+  border: 4px solid black;
+  width: 30%;
+  margin: 0;
+}
+.content{
+  display: flex;
+  justify-content: space-around;
+  border: 4px solid blue;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.tab{
+  background-color: black;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  color: white;
+  width: 30%;
+  margin: 0;
+}
