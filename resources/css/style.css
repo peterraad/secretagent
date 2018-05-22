@@ -6,10 +6,10 @@ html{
   font-size: 18px;
 }
 
-.site {
+/*.site{
     margin: auto;
 }
-
+*/
 .logo{
   display: flex;
   width: 100%;
@@ -60,25 +60,29 @@ a{
   text-decoration: none;
   color: white;
 }
-.navitems{
-  display: flex;
-  justify-content: space-around;
-  font-weight: bold;
-  color: white;
-  font-size: 1rem;
-  padding-top: .75rem;
-  padding-bottom: .75rem;
-
+@media only screen and (min-width: 1025px){
+  .navitems{
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    color: white;
+    font-size: 1rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+  }
+  .mobilenav{
+    display: none;
+  }
 }
 
 .content img {
   width: 9rem;
+  height: 9rem;
   padding: 2rem;
 }
 .content{
   display: flex;
   justify-content: space-around;
-  border: 4px solid blue;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
@@ -94,21 +98,98 @@ a{
   text-align: center;
   margin: 0;
 }
-.pen{
+.container{
   display: flex;
   flex-direction: column;
-
+  align-content: center;
   justify-content: center;
-  width: 30%;
   border: 4px solid black;
 }
-
-.watch{
-  width: 30%;
+.glassescontainer{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
   border: 4px solid black;
 }
+.footercontainer{
+  display: flex;
+  justify-content: space-between;
+  border: 4px solid green;
+  width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.locationcontainer{
+  display: block;
+  width: 20%;
+}
+.hourscontainer{
+  display: block;
+}
+.footercontainer h4{
+  background-color: black;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  color: white;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+}
 
-.glasses{
-  width: 30%;
-  border: 4px solid black;
+.hourscontainer{
+  width: 20%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container{
+    width: 47%;
+  }
+  .container.glass{
+    display: none;
+  }
+  .navitems{
+    display: none;
+  }
+  .mobilenav{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    font-size: 1rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+  }
+}
+@media only screen and (max-width: 470px){
+  .arrivalitems h4{
+    font-family: helvetica;
+    font-size: 0.77rem;
+    font-weight: bold;
+
+  }
+  .newarrival{
+    display: flex;
+    align-items: center;
+    height: 15rem;
+    width: 100%;
+
+  }
+  .arrivalitems h1{
+    font-family: helvetica;
+    font-size: 1rem;
+    font-weight: bold;
+
+  }
+}
+footer{
+  height: 5rem;
+  background-color: black;
+}
+.footertext{
+  margin: 0 auto;
+}
+footer span{
+  color: white;
 }
